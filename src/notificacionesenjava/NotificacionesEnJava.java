@@ -72,7 +72,7 @@ public class NotificacionesEnJava {
                 
                 //Tambien podemos mostrar mensajes simples, sin iconos
                 DesktopNotify.setDefaultTheme(NotifyTheme.Light);
-                //DesktopNotify.showDesktopMessage("", "También puede mostrar mensajes sin un titulo, sin un icono, con un icono personalizado"message);
+                DesktopNotify.showDesktopMessage("", "También puede mostrar mensajes sin un titulo, sin un icono, con un icono personalizado", DesktopNotify.HELP);
                 
                 
             }
