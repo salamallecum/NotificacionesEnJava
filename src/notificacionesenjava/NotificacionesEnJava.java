@@ -4,6 +4,7 @@ import ds.desktop.notify.DesktopNotify;
 import ds.desktop.notify.NotifyTheme;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -71,9 +72,12 @@ public class NotificacionesEnJava {
                 //new Formulario().setVisible(true);
                 
                 //Tambien podemos mostrar mensajes simples, sin iconos
-                DesktopNotify.setDefaultTheme(NotifyTheme.Light);
-                DesktopNotify.showDesktopMessage("", "También puede mostrar mensajes sin un titulo, sin un icono, con un icono personalizado", DesktopNotify.HELP);
+                //DesktopNotify.setDefaultTheme(NotifyTheme.Light);
+                //DesktopNotify.showDesktopMessage("", "También puede mostrar mensajes sin un titulo, sin un icono, con un icono personalizado", DesktopNotify.HELP);
                 
+                //Tambien puede mostrar un mensaje de Dialogo
+                String texto = JOptionPane.showInputDialog(null, "Ingrese Texto");
+                System.out.println(texto);
                 
             }
         });
