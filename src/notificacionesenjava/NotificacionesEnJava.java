@@ -84,13 +84,17 @@ public class NotificacionesEnJava {
         */
         
         //Un mensaje sin icono
-        DesktopNotify.showDesktopMessage("Un mensaje sin icono", "", DesktopNotify.DEFAULT, new ActionListener() {
+        /*
+        DesktopNotify.showDesktopMessage("Un mensaje sin icono", "mensaje", DesktopNotify.DEFAULT, new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 //Agregar aqui lo que quiera que suceda al hacer click
             }
         });
+        */
         
+        DesktopNotify.setDefaultTheme(NotifyTheme.Dark);
+        DesktopNotify.showDesktopMessage("Eventos de Accion", "Tambien puede añadir un ActionListener para especificar una acción a " );
         
        
         
