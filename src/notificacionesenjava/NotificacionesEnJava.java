@@ -92,14 +92,5 @@ public class NotificacionesEnJava {
             }
         });
         */
-        
-        DesktopNotify.setDefaultTheme(NotifyTheme.Dark);
-        DesktopNotify.showDesktopMessage("Eventos de Accion", "Tambien puede añadir un ActionListener para especificar una acción a " );
-        
-       
-        
-        
-        
     }
-    
 }
