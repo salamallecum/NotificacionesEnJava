@@ -66,6 +66,7 @@ public class NotificacionesEnJava {
         */
 
         //Mensaje de pedido de entrada (ejecuta un evento al hacer click sobre ella)
+        /*
         DesktopNotify.showDesktopMessage("Mensaje de Pedido de Entrada", "Este es un mensaje de pedido de entrada, úselo para solicitar datos (redirigiendo a un formulario de ingreso), Se brinda un icono por defecto para este tipo de mensajes, pero se puede usar el que usted prefiera en su lugar", DesktopNotify.INPUT_REQUEST, new ActionListener(){ @Override
             public void actionPerformed(ActionEvent e) {
                 //Podemos utilizar un formulario frame o cualquier otro 
@@ -76,11 +77,21 @@ public class NotificacionesEnJava {
                 //DesktopNotify.showDesktopMessage("", "También puede mostrar mensajes sin un titulo, sin un icono, con un icono personalizado", DesktopNotify.HELP);
                 
                 //Tambien puede mostrar un mensaje de Dialogo
-                String texto = JOptionPane.showInputDialog(null, "Ingrese Texto");
-                System.out.println(texto);
-                
+                //String texto = JOptionPane.showInputDialog(null, "Ingrese Texto");
+                //System.out.println(texto);        
             }
         });
+        */
+        
+        //Un mensaje sin icono
+        DesktopNotify.showDesktopMessage("Un mensaje sin icono", "", DesktopNotify.DEFAULT, new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //Agregar aqui lo que quiera que suceda al hacer click
+            }
+        });
+        
+        
        
         
         
